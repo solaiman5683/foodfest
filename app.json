@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "foodfest",
+    "slug": "foodfest",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "foodfest"
+}
