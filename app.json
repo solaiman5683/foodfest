@@ -5,7 +5,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "",
+    "githubUrl": "https://github.com/solaiman5683/foodfest",
+    "android": {
+      "package": "com.solaiman.sh6.foodfest"
+    }
   },
   "name": "foodfest"
 }

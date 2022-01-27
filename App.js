@@ -1,37 +1,21 @@
 import React from 'react';
-import { Image, SafeAreaView, StatusBar, StyleSheet } from 'react-native';
+import { NativeRouter, Route, Routes } from 'react-router-native';
+import Chief from './Components/Screens/Welcome/Chief';
+import FindFood from './Components/Screens/Welcome/FindFood';
+import Variety from './Components/Screens/Welcome/Variety';
+import Welcome from './Components/Screens/Welcome/Welcome';
 
 export default function App() {
-  return (
+	return (
 		<>
-			<SafeAreaView style={styles.container}>
-				<StatusBar
-					animated={true}
-					backgroundColor='#E53212'
-					barStyle='default'
-					showHideTransition='slide'
-					hidden={false}
-				/>
-				<Image
-					fadeDuration={1000}
-					source={require('./logo.png')}
-					style={styles.image}
-				/>
-			</SafeAreaView>
+			<NativeRouter>
+				<Routes>
+					<Route path='/' element={<Welcome />} />
+					<Route path='/find' element={<FindFood />} />
+					<Route path='/chief' element={<Chief />} />
+					<Route path='/variety' element={<Variety />} />
+				</Routes>
+			</NativeRouter>
 		</>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#E53212',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-	text: {
-		fontSize: 30,
-		fontWeight: 'bold',
-		color: '#fff',
-	},
-});
