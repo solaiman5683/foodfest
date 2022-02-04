@@ -1,24 +1,17 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
-import { Link } from 'react-router-native';
 import FlatButton from '../../Shared/FlatButton';
+import OutlineButton from '../../Shared/OutlineButton';
 import SafeView from '../../Shared/SafeView';
 
 const Variety = () => {
-	let a = 1;
 	return (
 		<SafeView
 			bgColor='#fff'
 			statusBG='#fff'
 			style={{ justifyContent: 'space-around' }}>
 			<View style={styles.top}>
-				<Link to='/'>
-					<Image
-						fadeDuration={500}
-						source={require('../../../Assets/images/skip-btn.png')}
-						style={styles.btn}
-					/>
-				</Link>
+                <OutlineButton text='Back' link='chief'/>
 			</View>
 			<View style={styles.center}>
 				<Image
@@ -38,8 +31,8 @@ const Variety = () => {
 					style={styles.step}
 				/>
 			</View>
-            <View style={styles.bottom}>
-                <FlatButton text='Get Started' style={{alignItems:'center'}} />
+			<View style={styles.bottom}>
+				<FlatButton text='Get Started' style={{ alignItems: 'center' }} />
 			</View>
 		</SafeView>
 	);
@@ -55,10 +48,10 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 	},
 	bottom: {
-        width: '100%',
-        padding: 20,
-        
-        textAlign:'center',
+		width: '100%',
+		padding: 20,
+
+		textAlign: 'center',
 	},
 	text: {
 		fontSize: 30,
