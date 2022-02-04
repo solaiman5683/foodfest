@@ -33,7 +33,8 @@ const FadeInView = ({
 			style={{
 				flex: 1,
 				backgroundColor: bgColor,
-				...style,
+				justifyContent: 'space-around',
+				paddingVertical: 20,
 			}}>
 			<StatusBar
 				animated={true}
@@ -42,7 +43,7 @@ const FadeInView = ({
 				showHideTransition='slide'
 				hidden={hidden}
 			/>
-			<Animated.View style={{ opacity: fadeAnim }}>{children}</Animated.View>
+			<Animated.View style={{ opacity: fadeAnim, flex:1, ...style }}>{children}</Animated.View>
 		</SafeAreaView>
 	);
 };

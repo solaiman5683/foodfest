@@ -10,7 +10,7 @@ const FindFood = () => {
 		<FadeInView
 			bgColor='#fff'
 			statusBG='#fff'
-			style={{ justifyContent: 'space-around' }}>
+			style={{ justifyContent: 'space-between' }}>
 			<View style={styles.top}>
 				<OutlineButton text='Skip' />
 			</View>
@@ -53,8 +53,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-around',
-		paddingBottom: 20,
-		paddingTop: 30,
+		paddingBottom: 30,
 	},
 	text: {
 		fontSize: 30,

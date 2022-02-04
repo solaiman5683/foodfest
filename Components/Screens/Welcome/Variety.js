@@ -9,7 +9,7 @@ const Variety = () => {
 		<SafeView
 			bgColor='#fff'
 			statusBG='#fff'
-			style={{ justifyContent: 'space-around' }}>
+			style={{ justifyContent: 'space-between' }}>
 			<View style={styles.top}>
                 <OutlineButton text='Back' link='chief'/>
 			</View>
@@ -32,7 +32,7 @@ const Variety = () => {
 				/>
 			</View>
 			<View style={styles.bottom}>
-				<FlatButton text='Get Started' style={{ alignItems: 'center' }} />
+				<FlatButton text='Get Started' link='login' onPress={()=>console.log('Hello')} style={{ alignItems: 'center' }} />
 			</View>
 		</SafeView>
 	);
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
 	top: {
 		alignItems: 'flex-start',
 		paddingLeft: 20,
+		paddingTop: 30,
 		justifyContent: 'flex-end',
 	},
 	center: {
@@ -50,7 +51,6 @@ const styles = StyleSheet.create({
 	bottom: {
 		width: '100%',
 		padding: 20,
-
 		textAlign: 'center',
 	},
 	text: {
