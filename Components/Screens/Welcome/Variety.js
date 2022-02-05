@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import FlatButton from '../../Shared/FlatButton';
 import OutlineButton from '../../Shared/OutlineButton';
 import SafeView from '../../Shared/SafeView';
@@ -11,7 +11,7 @@ const Variety = () => {
 			statusBG='#fff'
 			style={{ justifyContent: 'space-between' }}>
 			<View style={styles.top}>
-                <OutlineButton text='Back' link='chief'/>
+				<OutlineButton text='Back' link='chief' />
 			</View>
 			<View style={styles.center}>
 				<Image
@@ -32,7 +32,12 @@ const Variety = () => {
 				/>
 			</View>
 			<View style={styles.bottom}>
-				<FlatButton text='Get Started' link='login' onPress={()=>console.log('Hello')} style={{ alignItems: 'center' }} />
+				<FlatButton
+					text='Get Started'
+					link='login'
+					onPress={() => console.log('Hello')}
+					style={{ alignItems: 'center' }}
+				/>
 			</View>
 		</SafeView>
 	);
@@ -63,18 +68,6 @@ const styles = StyleSheet.create({
 		fontWeight: 'normal',
 		padding: 10,
 		marginBottom: 30,
-		color: '#333',
-	},
-	button: {
-		fontSize: 20,
-		textAlign: 'right',
-		borderWidth: 1,
-		borderColor: '#333',
-		paddingLeft: 20,
-		padding: 10,
-		paddingRight: 20,
-		margin: 10,
-		borderRadius: 5,
 		color: '#333',
 	},
 	image: {

@@ -14,7 +14,8 @@ const SafeView = ({
 			style={{
 				flex: 1,
                 backgroundColor: bgColor,
-                ...style,
+				...style,
+				padding:10,
 			}}>
 			<StatusBar
 				animated={true}

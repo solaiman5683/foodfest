@@ -12,7 +12,7 @@ const FindFood = () => {
 			statusBG='#fff'
 			style={{ justifyContent: 'space-between' }}>
 			<View style={styles.top}>
-				<OutlineButton text='Skip' />
+				<OutlineButton text='Skip' link='login' />
 			</View>
 			<View style={styles.center}>
 				<Image

@@ -3,7 +3,6 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import FadeInView from '../../Shared/FadeInView';
 import FlatButton from '../../Shared/FlatButton';
 import OutlineButton from '../../Shared/OutlineButton';
-import SafeView from '../../Shared/SafeView';
 
 const Chief = () => {
 	let a = 1;
@@ -13,7 +12,7 @@ const Chief = () => {
 			statusBG='#fff'
 			style={{ justifyContent: 'space-between' }}>
 			<View style={styles.top}>
-				<OutlineButton text='Skip' />
+				<OutlineButton text='Skip' link='login' />
 			</View>
 			<View style={styles.center}>
 				<Image

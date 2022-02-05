@@ -41,6 +41,10 @@ const styles = StyleSheet.create({
 		fontWeight: 'bold',
 		color: '#fff',
 	},
+	image:{
+		width: 240,
+		height: 66,
+	}
 });
 
 export default Welcome;
